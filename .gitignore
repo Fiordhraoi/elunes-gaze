@@ -1,0 +1,33 @@
+# Local secrets and configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+local.settings.*
+# Dependencies and generated output (runtime undecided)
+node_modules/
+dist/
+build/
+target/
+coverage/
+.cache/
+__pycache__/
+*.py[cod]
+.venv/
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+Desktop.ini
+# Private game/capture data and local logs
+captures/
+recordings/
+local-data/
+SavedVariables/
+*.log
+# Packages
+*.zip
+*.tar.gz
