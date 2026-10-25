@@ -20,3 +20,8 @@ Read [ARCHITECTURE.md](ARCHITECTURE.md) for components, trust boundaries, resear
 Chat can contain private information. The design keeps data local, disables chat export by default, and requires explicit LAN sharing and client pairing.
 
 This is an independent fan project, not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft and related names belong to their respective owners.
+
+### License
+Copyright (C) 2026 Fiordhraoi and contributors.
+
+Elune's Gaze is licensed under the GNU General Public License version 3 only (SPDX: `GPL-3.0-only`). See [LICENSE](LICENSE) for the full terms. Distributed without warranty.
