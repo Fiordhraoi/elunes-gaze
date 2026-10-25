@@ -32,6 +32,7 @@ Install Python 3.10+ and Pillow, then run from the extracted folder:
 
 ```text
 python -m pip install -r requirements.txt
+python make_fixtures.py
 python read_strip.py fixtures/slim.png
 python read_strip.py "your-screenshot.png"
 ```
