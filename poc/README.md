@@ -6,13 +6,21 @@ Experimental Retail Lua addon plus an offline Python screenshot reader. No compa
 
 In your Retail client, run `/dump select(4, GetBuildInfo())` and note the interface number. Close WoW. No client version is guessed or claimed supported by this package.
 
-In PowerShell, from this extracted directory, run:
+On Linux/SteamOS, from this extracted directory, run (your reported interface number is 120105):
+
+```sh
+sh ./prepare-addon.sh 120105
+```
+
+No executable permission or PowerShell is needed. The script also works when invoked from another directory. For a different client version, substitute the interface number reported by that client.
+
+On Windows in PowerShell, run:
 
 ```powershell
 .\Prepare-Addon.ps1 -InterfaceVersion YOUR_NUMBER
 ```
 
-Replace YOUR_NUMBER with the integer returned by your client. The script creates the .toc locally; it does not install anything or change your execution policy. Alternatively, copy ElunesGazePoC.toc.in to ElunesGazePoC.toc yourself and replace @INTERFACE@ with that number in a text editor (do not leave it as .toc.txt).
+Replace YOUR_NUMBER with the integer returned by your client. Both scripts create the .toc locally and refuse to overwrite an existing one; neither installs anything. Alternatively, copy ElunesGazePoC.toc.in to ElunesGazePoC.toc yourself and replace @INTERFACE@ with that number in a text editor (do not leave it as .toc.txt).
 
 Copy the ElunesGazePoC folder to your actual `_retail_/Interface/AddOns/` directory. Verify the final path is `Interface/AddOns/ElunesGazePoC/ElunesGazePoC.toc`. Start WoW and enable Elune's Gaze - Transport Lab. Matching the interface number is not proof of API compatibility.
 
