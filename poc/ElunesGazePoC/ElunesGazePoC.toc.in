@@ -1,0 +1,9 @@
+## Interface: @INTERFACE@
+## Title: Elune's Gaze - Transport Lab
+## Notes: Experimental noncombat strip and SavedVariables diagnostics. Not Blizzard approved.
+## Author: Fiordhraoi and contributors
+## Version: 0.1.0
+## SavedVariables: ElunesGazePoCDB
+## X-License: GPL-3.0-only
+Protocol.lua
+Main.lua
