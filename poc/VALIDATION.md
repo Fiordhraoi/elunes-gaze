@@ -1,6 +1,6 @@
 # Offline validation - 2026-10-25
 
-Passed using Lua executed through Lupa 2.8 with mocked WoW APIs, Pillow-rendered screenshots from the addon's actual texture colors, and the delivered Python reader:
+Passed using Lua 5.1 executed through Lupa 2.8 with mocked WoW APIs, Pillow-rendered screenshots from the addon's actual texture colors, and the delivered Python reader. Reproduce with test_offline.py:
 
 - Lua source loads and initializes with output/chat OFF.
 - Both Slim/Fat produce the expected sample text with checksum OK.
