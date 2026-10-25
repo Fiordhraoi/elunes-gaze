@@ -95,4 +95,6 @@ See VALIDATION.md for offline test results and their limits. The implementation 
 - https://github.com/Gethe/wow-ui-source/blob/live/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua
 - https://github.com/Gethe/wow-ui-source/blob/live/Interface/AddOns/Blizzard_ChatFrameBase/Mainline/ChatFrameOverrides.lua
 
+To reproduce offline tests (optional development dependency): `python -m pip install lupa==2.8`, then `python test_offline.py`. This executes the Lua 5.1 implementation with mocked game APIs. It does not launch WoW.
+
 GPL-3.0-only; see LICENSE. Independent fan project; no process memory reads, injection, input automation, protected/secret extraction, restriction bypass or game commands. Restricted data is omitted. There is no policy approval or current-client compatibility claim.
