@@ -3,7 +3,7 @@
 
 An open-source project exploring a read-only second-screen experience for World of Warcraft Retail: permitted noncombat chat, quests, and map context in a local browser dashboard.
 
-**Status: architecture and research only. No working addon, companion, or transport is included.** The proposed pixel-encoded data bridge is an **unvalidated proof of concept**, subject to Blizzard policy and technical investigation. Screen capture does not establish policy approval. There is no claim of Blizzard approval, transport reliability, or current API compatibility.
+**Status: experimental personal transport lab available in [poc/](poc/README.md). Offline codec tests pass; live WoW behavior and transport reliability are unvalidated. No companion service is included.** The proposed pixel-encoded data bridge is an **unvalidated proof of concept**, subject to Blizzard policy and technical investigation. Screen capture does not establish policy approval. There is no claim of Blizzard approval, transport reliability, or current API compatibility.
 
 ### Planned components
 - **Retail Lua addon:** collect only explicitly permitted, ordinary noncombat data through supported addon APIs.
@@ -15,7 +15,7 @@ An open-source project exploring a read-only second-screen experience for World 
 Read-only with respect to the game. No memory injection or process-memory access, input automation, protected/secret-value extraction, restriction bypasses, or combat assistance. Browser actions must not send commands back into WoW. Unavailable or restricted data is omitted.
 
 ### Getting started
-Read [ARCHITECTURE.md](ARCHITECTURE.md) for components, trust boundaries, research gates, and proposed milestones. There is nothing to install or run yet. Implementation language and framework for the companion and dashboard remain undecided.
+Read [ARCHITECTURE.md](ARCHITECTURE.md) for components, trust boundaries, research gates, and proposed milestones. For the personal addon and screenshot decoder, follow [poc/README.md](poc/README.md). Implementation language and framework for the companion and dashboard remain undecided.
 
 Chat can contain private information. The design keeps data local, disables chat export by default, and requires explicit LAN sharing and client pairing.
 
